@@ -1,0 +1,23 @@
+
+<html>
+    <head>
+        <script>
+            function addItem() {
+                var text = document.getElementById("inputText").value;
+                var list = document.getElementById("list");
+                list.innerHTML += "<br>";
+                list.innerHTML += text; 
+            }
+            function clearAll() {
+                document.getElementById("list").innerHTML = "";
+            }
+        </script>
+    </head>
+    <body>
+        <p>Enter your todo item</p>
+        <input id="inputText" type="text" name="todoItem"/>
+        <button value="submit" onclick="addItem()">submit</button>
+        <button value="submit" onclick="clearAll()">ClearList</button>
+        <p id="list"></p>
+    </body>
+</html>

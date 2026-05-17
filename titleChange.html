@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title id="abs">1</title>
+        <script>
+            function incre(){
+                var e = document.getElementById("abs");
+                var value = parseInt(e.innerHTML);
+                value++;
+                e.innerHTML = value;
+            }
+            function decre(){
+                var e = document.getElementById("abs");
+                var value = parseInt(e.innerHTML);
+                value--;
+                e.innerHTML = value;
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="incre" onclick="incre()"/>
+        <input type="button" value="decre" onclick="decre()"/>
+    </body>
+</html>

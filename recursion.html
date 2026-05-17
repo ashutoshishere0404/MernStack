@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+
+// function sumTo(n) {
+//   if (n == 1) return 1;
+//   return n + sumTo(n - 1);
+// }
+
+// alert( sumTo(10000) );
+
+function f() {
+  let value = Math.random();
+
+  function g() {
+    debugger; // in console: type alert(value); No such variable!
+  }
+
+  return g;
+}
+
+let g = f();
+g();
+</script>
