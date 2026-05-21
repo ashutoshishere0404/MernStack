@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <style>
+            body {
+                background: cadetblue;
+                margin: 250px;
+            }
+        </style>
+        <script>
+            function increment(){
+                let element = document.getElementById("id1");
+                let value = parseInt(element.innerHTML);
+                console.log(value);
+                element.innerHTML = value+1;
+            }
+            function decrement() {
+                let element = document.getElementById("id1");
+                let value = parseInt(element.innerHTML);
+                element.innerHTML = value - 1;
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="--" onclick="decrement()">
+        <p id="id1">0</p>
+        <input type="button" value="++" onclick="increment()">
+    </body>
+</html>
