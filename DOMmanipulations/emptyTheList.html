@@ -1,0 +1,16 @@
+<!doctype html>
+<body>
+<ol id="elem">
+  <li>Hello</li>
+  <li>World</li>
+</ol>
+
+<script>
+  function clear(elem) { /* your code */
+    while(elem.firstChild) elem.firstChild.remove();
+   }
+
+  setTimeout(()=>clear(elem),2000);
+  // clear(elem); // clears the list
+</script>
+</body>
