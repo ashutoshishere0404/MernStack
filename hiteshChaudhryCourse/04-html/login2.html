@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assignment login page</title>
+    <style>
+      .card {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 25vh;
+        background-color: #0ba7e9;
+      }
+      button:hover {
+        background-color: rgb(59, 59, 236);
+      }
+      body {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Assignment login page</h2>
+      <form>
+        <input type="text" style="width: 210px" placeholder="username" />
+        <div class="internalCard">
+          <!-- internal card for horizontal flex -->
+          <input type="number" placeholder="age" id="" width="20px" />
+          <select name="age" id="">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+          </select>
+        </div>
+        <button type="submit">login</button>
+      </form>
+    </div>
+  </body>
+</html>
