@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      img {
+        width: 200px;
+        height: 300px;
+      }
+      .box {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+    <title>Bootstrap Carousel</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+
+        <!-- Images -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/belt.png" class="d-block w-100" alt="Belt" />
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/shoe.png" class="d-block w-100" alt="Shoe" />
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/watch.png" class="d-block w-100" alt="Watch" />
+          </div>
+        </div>
+
+        <!-- Previous Button -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <!-- Next Button -->
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <div class="cards">
+        <div class="box">
+          <img src="images/belt.png" alt="" /><button>Watch Now</button>
+        </div>
+        <div class="box">
+          <img src="images/shoe.png" alt="" /><button>Watch Now</button>
+        </div>
+        <div class="box">
+          <img src="images/watch.png" alt="" /><button>Watch Now</button>
+        </div>
+      </div>
+      <div
+        style="
+          background-color: rgb(17, 130, 236);
+          justify-content: center;
+          text-align: center;
+        "
+      >
+        &copy;-Ashutosh Dubey
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
