@@ -3,7 +3,7 @@
 let num1 = 5;
 let num2 = 8;
 
-/*
+/* 
 console.log("I am regular upper code");
 if (num1 > num2) {
   console.log(" num 1 is greater than num2");
@@ -12,7 +12,7 @@ if (num1 > num2) {
 }
 
 console.log("I am regular bottom code");
-*/
+ */
 
 // Checking if a string is equal to another string:
 
@@ -27,9 +27,9 @@ if (username == anotherUsername) {
 
 //Checking if a variable is a number or not:
 
-let score = "44";
+let score = 44;
 
-if (typeof score === "number") {
+if (typeof score === "Number") {
   console.log("Yep, this is a number");
 } else {
   console.log("No that is not a number");
@@ -56,3 +56,10 @@ if (items.length === 0) {
 } else {
   console.log("Array is NOT empty");
 }
+
+// reversing an array
+
+let newArray = [1, 2, 3];
+// newArray.reverse();
+
+console.log(newArray);
