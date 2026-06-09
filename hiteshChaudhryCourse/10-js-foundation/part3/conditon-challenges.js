@@ -61,5 +61,5 @@ if (items.length === 0) {
 
 let newArray = [1, 2, 3];
 // newArray.reverse();
-
+newArray.indexOf(2);
 console.log(newArray);
